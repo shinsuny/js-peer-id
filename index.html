@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>IPFS peer id manual generation | IPFS Cluster</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src="https://unpkg.com/peer-id/dist/index.min.js"></script>
+  <script src="main.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <h1>IPFS peer id manual generation for automation(also for IPFS Cluster):</h1>
+  <label for="bits">Bits:</label>
+  <input type="number" id="bits" name="bits" value="1024">
+  <p>Key Type:</p>
+  <div>
+    <input type="radio" id="rsa" name="keytype" value="rsa" checked>
+    <label for="rsa">RSA</label>
+  </div>
+
+  <div>
+    <input type="radio" id="ed25519" name="keytype" value="ed25519">
+    <label for="ed25519">ED25519</label>
+  </div> 
+  <br>
+  <br>
+  <input onclick="return appendNewKeypair()" type="submit" value="Generate">
+  <br>
+  <br>
+  <textarea id="keyout" rows="30" cols="140"></textarea>
+</body>
+</html>
