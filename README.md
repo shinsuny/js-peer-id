@@ -1,3 +1,6 @@
+# Web demo (goto)
+https://shinsuny.github.io/js-peer-id/
+
 # peer-id
 
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://protocol.ai)
